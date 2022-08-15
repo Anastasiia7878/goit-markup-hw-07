@@ -14,6 +14,8 @@
 
 .work-example-title {
     flex-basis: calc((100% - 60px) / 3);
+
+    background-color: var(--primary-text-color-theme-dark);
 }
 
 .work-example-text {
@@ -33,15 +35,15 @@
     border-radius: 4px;
     padding: 6px 22px;
     transition: box-shadow var(--transition-duration) var(--transition-function), color var(--transition-duration) var(--transition-function), background-color var(--transition-duration) var(--transition-function);
-}
 
-.filter-btn:hover,
-.filter-btn:focus {
-    color: var(--primary-text-color-theme-dark);
-    background-color: var(--accent-color);
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12),
-        0px 2px 1px rgba(0, 0, 0, 0.08),
-        0px 1px 3px rgba(0, 0, 0, 0.1);
+    &:hover,
+    &:focus {
+        color: var(--primary-text-color-theme-dark);
+        background-color: var(--accent-color);
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12),
+            0px 2px 1px rgba(0, 0, 0, 0.08),
+            0px 1px 3px rgba(0, 0, 0, 0.1);
+    }
 }
 
 .example-text {
@@ -60,22 +62,17 @@
     color: var(--primary-text-color);
 }
 
-.work-example-title {
-    background-color: var(--primary-text-color-theme-dark);
-}
-
 .work-example-link {
     display: block;
     transition: box-shadow var(--transition-duration) var(--transition-function);
-}
 
-.work-example-link:hover,
-.work-example-link:focus {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 2px 1px rgba(0, 0, 0, 0.06),
-        0px 1px 3px rgba(0, 0, 0, 0.16);
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 2px 1px rgba(0, 0, 0, 0.06),
+            0px 1px 3px rgba(0, 0, 0, 0.16);
+    }
 }
-
 
 .work-example-wrapper {
     position: relative;
@@ -103,9 +100,10 @@
 
     color: var(--primary-text-color-theme-dark);
     background-color: rgba(33, 150, 243, 0.9);
+
+    .work-link-wrapper:hover &,
+    .work-link-wrapper:focus & {
+        transform: translate(0, 0);
+    }
 }
 
-.work-link-wrapper:hover .overlay-portfolio,
-.work-link-wrapper:focus .overlay-portfolio {
-    transform: translate(0, 0);
-}

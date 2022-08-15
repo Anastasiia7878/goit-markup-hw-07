@@ -22,13 +22,14 @@
     background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.1);
     fill: #000000;
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
 }
 
 .modal-close-btn-icon {
     transition: fill var(--transition-duration) var(--transition-function);
 }
 
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-    fill: var(--accent-color);
-}

@@ -17,11 +17,7 @@
 .contacn-list {
     display: flex;
     align-items: center;
-}
-
-.contact-header-link {
-    display: flex;
-    align-items: center;
+    margin-left: auto;
 }
 
 .logo-header {
@@ -36,17 +32,6 @@
     margin-right: 50px;
 }
 
-
-.contacn-list {
-    margin-left: auto;
-}
-
-.contact-header-icon {
-    fill: currentColor;
-}
-
-
-
 .link-nav {
     position: relative;
     display: flex;
@@ -58,43 +43,45 @@
     color: var(--primary-text-color);
     transition: color var(--transition-duration) var(--transition-function);
 
-}
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 
-.link-nav:hover,
-.link-nav:focus {
-    color: var(--accent-color);
+    &.current {
+        color: var(--accent-color);
+
+        &:hover:after {
+            background-color: var(--accent-color);
+        }
+    }
 }
 
 .contact-header-link {
+    display: flex;
+    align-items: center;
     color: var(--secondary-text-colour);
 }
 
 .contact-header-icon {
+    fill: currentColor;
     margin-right: 10px;
-}
-
-.link-nav.current {
-    color: var(--accent-color);
 }
 
 .current {
     color: var(--accent-color);
-}
 
-.current::after {
-    position: absolute;
-    content: '';
-    left: 0;
-    bottom: 0;
-    border-radius: 2px;
-    width: 100%;
-    height: 4px;
-    background-color: var(--accent-color);
-    border-radius: 2px;
-    transition: background-color var(--transition-duration) var(--transition-function);
-    bottom: -32px;
-}
-
-.link-nav.current:hover:after {
-    background-color: var(--accent-color);
+    &::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        border-radius: 2px;
+        width: 100%;
+        height: 4px;
+        background-color: var(--accent-color);
+        border-radius: 2px;
+        transition: background-color var(--transition-duration) var(--transition-function);
+        bottom: -32px;
+    }
 }

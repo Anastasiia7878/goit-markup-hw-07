@@ -19,23 +19,22 @@
     border-radius: 50%;
     background-color: #FFFFFF;
     transition: background-color var(--transition-duration) var(--transition-function);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
 }
 
 .socisl-list-icone {
     transition: fill var(--transition-duration) var(--transition-function);
     fill: #AFB1B8;
-}
 
-.socisl-list-link:hover,
-.socisl-list-link:focus {
-    background-color: var(--accent-color);
+    .socisl-list-link:hover &,
+    .socisl-list-link:focus & {
+        fill: #FFFFFF;
+    }
 }
-
-.socisl-list-link:hover .socisl-list-icone,
-.socisl-list-link:focus .socisl-list-icone {
-    fill: #FFFFFF;
-}
-
 .team-list-title {
     display: flex;
     flex-basis: calc((100% - 90px) / 4);
