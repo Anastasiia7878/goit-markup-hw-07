@@ -1,4 +1,4 @@
-.filter-list {
+.filter {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
@@ -24,7 +24,7 @@
     padding: 24px 20px;
 }
 
-.filter-btn {
+.filter__btn {
     @include font(16px, 500, 26px);
     text-align: center;
     letter-spacing: 0.03em;

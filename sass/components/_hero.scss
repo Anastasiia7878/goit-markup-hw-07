@@ -1,4 +1,4 @@
-.hero-title {
+.hero__title {
     @include font(44px, 900, 60px);
     text-align: center;
     letter-spacing: 0.06em;
@@ -7,7 +7,7 @@
     color: var(--primary-text-color-theme-dark);
 }
 
-.hero-btn {
+.hero__btn {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 32px;
