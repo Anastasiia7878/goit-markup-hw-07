@@ -10,9 +10,7 @@
 
 .join {
     font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
+    @include font(14px, 700, 16px);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -30,14 +28,13 @@
     height: 80px;
 }
 
-.contact-footer:not(:last-child) {
+.address__contact-footer:not(:last-child) {
     margin-bottom: 9px;
 }
 
-.address-link,
-.contact-link {
-    font-size: 14px;
-    line-height: 1.71;
+.address__link,
+.address__contact-link {
+    @include font(14px, 400, 24px);
     letter-spacing: 0.03em;
     transition: color var(--transition-duration) var(--transition-function);
 
@@ -59,7 +56,7 @@
     color: var(--primary-text-color-theme-dark);
 }
 
-.address-link {
+.address__link {
     color: var(--primary-text-color-theme-dark);
 }
 
@@ -69,10 +66,8 @@
     gap: 10px;
 }
 
-.socisl-list-link-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.socisl-list-footer__link {
+    @extend %align;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -86,24 +81,22 @@
 }
 
 
-.socisl-list-icone-footer {
+.socisl-list-footer__icone {
     transition: fill var(--transition-duration) var(--transition-function);
     fill: #FFFFFF;
 
-    .socisl-list-link-footer:hover &,
-    .socisl-list-link-footer:focus & {
+    .socisl-list-footer__link:hover &,
+    .socisl-list-footer__link:focus & {
         fill: #FFFFFF;
     }
 }
 
-.form-footer {
+.form-footer-container {
     margin-left: 93px;
 }
 
-.form-footer-head {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
+.form-footer-container__head {
+    @include font(14px, 700, 16px);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -111,10 +104,8 @@
     color: var(--primary-text-color-theme-dark);
 }
 
-.footer-form-btn {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 30px;
+.footer-form__btn {
+    @include font(16px, 700, 30px);
     display: flex;
     align-items: center;
     text-align: center;
@@ -134,7 +125,7 @@
     }
 }
 
-.footer-icon-btn {
+.footer-form__icon-btn {
     fill: #FFFFFF;
     margin-left: 10px;
 }
@@ -143,7 +134,7 @@
     display: flex;
 }
 
-.footer-form-input {
+.footer-form__input {
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);

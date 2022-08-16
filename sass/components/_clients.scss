@@ -4,8 +4,7 @@
 }
 
 .clients-title {
-    font-size: 36px;
-    line-height: 42px;
+    @include font(36px, 400, 42px);
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
@@ -21,15 +20,11 @@
 .clients-item {
     width: 170px;
     height: 97px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align;
 }
 
 .clients-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     width: 100%;

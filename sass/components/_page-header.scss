@@ -9,12 +9,12 @@
     align-items: center;
 }
 
-.nav-list {
+.menu {
     display: flex;
     align-items: center;
 }
 
-.contacn-list {
+.contact {
     display: flex;
     align-items: center;
     margin-left: auto;
@@ -24,21 +24,19 @@
     margin-right: 93px;
 }
 
-.nav-list-item:not(:last-child) {
+.menu__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.contact-mail {
+.contact__mail {
     margin-right: 50px;
 }
 
-.link-nav {
+.menu__link-nav {
     position: relative;
     display: flex;
     align-items: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font(14px, 500, 16px);
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     transition: color var(--transition-duration) var(--transition-function);
@@ -57,13 +55,28 @@
     }
 }
 
-.contact-header-link {
+.contact__link-nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    @include font(14px, 500, 16px);
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    transition: color var(--transition-duration) var(--transition-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.contact__header-link {
     display: flex;
     align-items: center;
     color: var(--secondary-text-colour);
 }
 
-.contact-header-icon {
+.contact__header-icon {
     fill: currentColor;
     margin-right: 10px;
 }

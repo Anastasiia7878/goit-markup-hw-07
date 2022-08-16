@@ -4,9 +4,7 @@
 }
 
 .modal-form-head {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
+    @include font(20px, 700, 23px);
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 12px;
@@ -19,8 +17,7 @@
 
 .modal-form-input-desc {
     display: block;
-    font-size: 12px;
-    line-height: 14px;
+    @include font(12px, 400, 14px);
     letter-spacing: 0.01em;
     margin-bottom: 4px;
     color: var(--secondary-text-colour);
@@ -77,8 +74,7 @@
     }
    
     &::placeholder {
-        font-size: 12px;
-        line-height: 14px;
+        @include font(12px, 400, 14px);
         letter-spacing: 0.01em;
     
         color: rgba(117, 117, 117, 0.5);
@@ -86,12 +82,9 @@
 }
 
 .modal-form-check-desc {
-    display: flex;
+    @extend %align;
     position: relative;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    line-height: 24px;
+    @include font(14px, 400, 24px);
     letter-spacing: 0.03em;
     margin-bottom: 30px;
 
@@ -142,9 +135,7 @@
     padding-bottom: 10px;
     padding-left: 52px;
     padding-right: 52px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 30px;
+    @include font(16px, 700, 30px);
     display: flex;
     align-items: center;
     text-align: center;
