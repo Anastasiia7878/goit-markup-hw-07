@@ -243,13 +243,13 @@ body {
 }
 
 .work-title,
-.team-title {
+.team-title,
+.clients-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.1666666667;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
 }
 
 .pluses-icon-conteiner {
@@ -396,15 +396,6 @@ body {
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.clients-title {
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 1.1666666667;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
 }
 
 .clients-list {
